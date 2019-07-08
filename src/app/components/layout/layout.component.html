@@ -1,5 +1,5 @@
 <div class="toolbar">
-  <button (click)="layoutService.addItem()">Add Item</button>
+  <button (click)="layoutService.addItem()" mat-raised-button color="primary">Add Item</button>
   <div
     class="draggable"
     draggable="true"
@@ -24,8 +24,8 @@
     >
     </ng-container>
     <button
-      (click)="layoutService.deleteItem(item)"
-    >
+      (click)="layoutService.deleteItem(item.id)"
+      class="many-delete-button" mat-raised-button color="warn">
       Delete Item
     </button>
   </gridster-item>
