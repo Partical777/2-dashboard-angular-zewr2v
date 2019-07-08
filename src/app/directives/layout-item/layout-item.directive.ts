@@ -29,6 +29,7 @@ export class LayoutItemDirective implements OnChanges {
     const component = components[this.componentRef];
     
     if (component) {
+      this.container.clear();   //clear viewer inside
       const factory = this.resolver.resolveComponentFactory<any>(component);
       this.component = this.container.createComponent(factory);
     }
