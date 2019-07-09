@@ -31,17 +31,21 @@ import { LayoutItemDirective } from './directives/layout-item/layout-item.direct
 //entry component
 import { Example1Component } from './components/example1/example1.component';
 import { Example2Component } from './components/example2/example2.component';
+import { Example3Component } from './components/example3/example3.component';
+import { Example4Component } from './components/example4/example4.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatButtonModule, MatCheckboxModule, BrowserAnimationsModule, MatSidenavModule, MatListModule, MatMenuModule, MatIconModule, MatGridListModule, MatCardModule, FlexLayoutModule, GridsterModule],
 
-  declarations: [ AppComponent, SidenavAutosize, ListOverview, MenuPosition, GridListDynamicExample, Card, D3LineChartDirective, LayoutComponent, LayoutItemDirective, Example1Component, Example2Component ],
+  declarations: [ AppComponent, SidenavAutosize, ListOverview, MenuPosition, GridListDynamicExample, Card, D3LineChartDirective, LayoutComponent, LayoutItemDirective, Example1Component, Example2Component, Example3Component, Example4Component ],
   
   bootstrap:    [ AppComponent ],
   entryComponents: [
     Example1Component,
-    Example2Component
+    Example2Component,
+    Example3Component,
+    Example4Component
   ]
 })
 export class AppModule { }

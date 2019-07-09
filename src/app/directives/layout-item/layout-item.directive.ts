@@ -9,10 +9,14 @@ import {
 
 import { Example1Component } from '../../components/example1/example1.component';
 import { Example2Component } from '../../components/example2/example2.component';
+import { Example3Component } from '../../components/example3/example3.component';
+import { Example4Component } from '../../components/example4/example4.component';
 
 const components = {
   example1: Example1Component,
-  example2: Example2Component
+  example2: Example2Component,
+  example3: Example3Component,
+  example4: Example4Component
 };
 @Directive({
   selector: '[appLayoutItem]'
