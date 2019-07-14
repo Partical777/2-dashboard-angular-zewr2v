@@ -35,16 +35,36 @@
 </div>
 <gridster [options]="options">
   <gridster-item *ngFor="let item of layout" [item]="item" 
-    (dragover)="layoutService.setDropId(item.id)">
-    <ng-container
-      appLayoutItem
-      [componentRef]="layoutService.getComponentRef(item.id)"
-    >
-    </ng-container>
-    <button
-      (click)="layoutService.deleteItem(item.id)"
-      class="many-delete-button" mat-raised-button color="warn">
-      Delete Item
-    </button>
+    (dragover)="layoutService.setDropId(item.id)" class="scene scene--card">
+
+<!-- Flip Effect -->
+      <div class="card">
+        <div class="card__face card__face--front">
+          <ng-container
+            appLayoutItem
+            [componentRef]="layoutService.getComponentRef(item.id)"
+          >
+          </ng-container>
+          <button
+            onclick="this.parentElement.parentElement.classList.toggle('is-flipped');"
+            class="many-edit-button" mat-raised-button color="primary">
+            Edit Item
+          </button>
+        </div>
+        <div class="card__face card__face--back">
+          API: <input type="text" name="api">
+          <button
+            (click)="layoutService.deleteItem(item.id)"
+            class="many-delete-button" mat-raised-button color="warn">
+            Delete Item
+          </button>
+          <button
+            onclick="this.parentElement.parentElement.classList.toggle('is-flipped');"
+            class="many-edit-button" mat-raised-button color="primary">
+            Flip Back
+          </button>
+        </div>
+      </div>
+    
   </gridster-item>
 </gridster>
