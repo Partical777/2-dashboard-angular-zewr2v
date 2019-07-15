@@ -2,15 +2,12 @@ import {Component} from '@angular/core';
 import { GridsterConfig, GridsterItem } from 'angular-gridster2';
 import { LayoutService, IComponent  } from '../../services/layout.service';
 
-/**
- * @title Menu positioning
- */
 @Component({
-  selector: 'menu-positioning',
-  templateUrl: 'menu-position.component.html',
-  styleUrls: ['menu-position.component.css'],
+  selector: 'sidenav',
+  templateUrl: 'sidenav.component.html',
+  styleUrls: ['sidenav.component.css'],
 })
-export class MenuPosition {
+export class SideNav {
   get options(): GridsterConfig {
     return this.layoutService.options;
   }
@@ -24,8 +21,3 @@ export class MenuPosition {
     private layoutService: LayoutService
   ) { }
 }
-
-
-/**  Copyright 2019 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license */

@@ -1,0 +1,36 @@
+<!-- sidenav toolbar adding component -->
+    <div class="toolbar">
+      <button (click)="layoutService.addItem()" mat-raised-button color="primary">Add Item</button>
+      <div
+        class="draggable"
+        draggable="true"
+        (dragend)="layoutService.dropItem('example1')"
+        style="background:green"
+      >
+        Example 1
+      </div>
+      <div
+        class="draggable"
+        draggable="true"
+        (dragend)="layoutService.dropItem('example2')"
+        style="background:red"
+      >
+        Example 2
+      </div>
+      <div
+        class="draggable"
+        draggable="true"
+        (dragend)="layoutService.dropItem('example3')"
+        style="background:blue"
+      >
+        Example 3
+      </div>
+      <div
+        class="draggable"
+        draggable="true"
+        (dragend)="layoutService.dropItem('example4')"
+        style="background:yellow"
+      >
+        Example 4
+      </div>
+    </div>

@@ -32,58 +32,14 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
 
-    <list-overview></list-overview>
+    <!-- <list-overview></list-overview> -->
+
+    <sidenav></sidenav>
     
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
-    </button>
   </mat-drawer>
 
 
-
-
-
-
   <app-layout></app-layout>
-
-
-
-
-  <!-- <div fxLayout
-     fxLayout.xs="column"
-     fxLayoutAlign="left"
-     fxLayoutGap="35px"
-     fxLayoutGap.xs="10px"
-     Style="margin-bottom:35px; margin-left:25px; margin-right: 25px;">
-    <card fxFlex="50%"></card>
-    <card fxFlex="50%"></card>
-  </div>
-  <div fxLayout
-     fxLayout.xs="column"
-     fxLayoutAlign="left"
-     fxLayoutGap="35px"
-     fxLayoutGap.xs="10px"
-     Style="margin-bottom:35px; margin-left:25px; margin-right: 25px;"
-     wrap>
-    <card fxFlex="70%"></card>
-    <div fxFlex="30%" 
-        fxLayout="column"
-        fxLayoutGap="15px"
-        fxLayoutGap.xs="10px"
-        Style="margin-bottom:35px;">
-      <card fxFlex="50%" fxFlexFill></card>
-      <card fxFlex="50%" fxFlexFill></card>
-    </div>
-  </div> -->
-  
-
-  <div class="example-sidenav-content">
-    <!-- <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button> -->
-  </div>
 
 </mat-drawer-container>
 
