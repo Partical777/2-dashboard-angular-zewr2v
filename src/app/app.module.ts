@@ -17,7 +17,6 @@ import { GridsterModule } from 'angular-gridster2';
 
 //layout component
 import { AppComponent } from './app.component';
-import { SidenavAutosize } from './components/sidenav/sidenav-autosize.component';
 import { ListOverview } from './components/list/list-overview.component';
 import { MenuPosition } from './components/menu/menu-position.component';
 import { GridListDynamicExample } from './components/grid-list-gynamic/grid-list-gynamic.component';
@@ -38,7 +37,7 @@ import { Example4Component } from './components/example4/example4.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatButtonModule, MatCheckboxModule, BrowserAnimationsModule, MatSidenavModule, MatListModule, MatMenuModule, MatIconModule, MatGridListModule, MatCardModule, FlexLayoutModule, GridsterModule],
 
-  declarations: [ AppComponent, SidenavAutosize, ListOverview, MenuPosition, GridListDynamicExample, Card, D3LineChartDirective, LayoutComponent, LayoutItemDirective, Example1Component, Example2Component, Example3Component, Example4Component ],
+  declarations: [ AppComponent, ListOverview, MenuPosition, GridListDynamicExample, Card, D3LineChartDirective, LayoutComponent, LayoutItemDirective, Example1Component, Example2Component, Example3Component, Example4Component ],
   
   bootstrap:    [ AppComponent ],
   entryComponents: [
