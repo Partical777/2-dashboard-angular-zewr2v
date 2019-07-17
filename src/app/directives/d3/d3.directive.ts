@@ -55,7 +55,7 @@ export class D3Directive {
         .append( 'svg' )
         // .attr( 'width', chart_width )
         // .attr( 'height', chart_height );
-        .attr('viewBox', '0 0 800 400')
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
         .attr('preserveAspectRatio', 'xMidYMid');
 
 
