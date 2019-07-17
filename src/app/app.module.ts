@@ -25,7 +25,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { SideNav } from './components/sidenav/sidenav.component';
 
 //directive
-import { D3LineChartDirective } from './directives/d3/line-chart.directive';
+import { D3Directive } from './directives/d3/d3.directive';
 import { LayoutItemDirective } from './directives/layout-item/layout-item.directive';
 
 //entry component
@@ -38,7 +38,7 @@ import { Example4Component } from './components/example4/example4.component';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, MatButtonModule, MatCheckboxModule, BrowserAnimationsModule, MatSidenavModule, MatListModule, MatMenuModule, MatIconModule, MatGridListModule, MatCardModule, FlexLayoutModule, GridsterModule],
 
-  declarations: [ AppComponent, ListOverview, MenuPosition, GridListDynamicExample, Card, D3LineChartDirective, LayoutComponent, LayoutItemDirective, SideNav, Example1Component, Example2Component, Example3Component, Example4Component ],
+  declarations: [ AppComponent, ListOverview, MenuPosition, GridListDynamicExample, Card, D3Directive, LayoutComponent, LayoutItemDirective, SideNav, Example1Component, Example2Component, Example3Component, Example4Component ],
   
   bootstrap:    [ AppComponent ],
   entryComponents: [

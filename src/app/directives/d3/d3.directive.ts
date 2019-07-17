@@ -1,20 +1,26 @@
-import { Directive, ElementRef, Input  } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit   } from '@angular/core';
 import * as d3 from 'd3';
 
 @Directive({
-  selector: '[D3FuckingLineChart]'
+  selector: '[D3FuckingGod]'
 })
 
-export class D3LineChartDirective {
-  @Input('ChartType') whattype;
+export class D3Directive {
+  @Input('ChartType') whattype: string;
   
   constructor(private el: ElementRef) {
     // el.nativeElement.innerHTML = '<div>Fuck</div>';
     // console.log(el.nativeElement.offsetWidth);
-    console.log(this.whattype);
-    // if (this.whattype == 'linechart'){
+    if (this.whattype == 'linechart'){
       this.createLineChart();
-    // }
+    }
+  }
+
+  ngOnInit() {
+    console.log(this.whattype);
+    if (this.whattype == 'linechart'){
+      this.createLineChart();
+    }
   }
 
   createLineChart(){
