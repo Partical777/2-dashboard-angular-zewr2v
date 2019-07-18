@@ -2,6 +2,7 @@
   display: flex;
   height: calc(100vh - 115px);
   flex-direction: column;
+  background: white;
 }
 
 button {
@@ -55,10 +56,12 @@ button {
 }
 
 .card__face--front {
-  background: red;
+  background: rgb(168,237,234);
+  background: linear-gradient(-20deg, rgba(168,237,234,1) 25%, rgba(254,214,227,1) 75%);
 }
 
 .card__face--back {
-  background: blue;
+  background: rgb(67,233,123);
+  background: linear-gradient(-20deg, rgba(67,233,123,1) 25%, rgba(56,249,215,1) 75%);
   transform: rotateY(180deg);
 }

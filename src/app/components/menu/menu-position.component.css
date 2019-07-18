@@ -1,5 +1,7 @@
 .main-menu {
   padding: 30px;
+  background: rgb(250,112,154);
+  background: linear-gradient(-20deg, rgba(250,112,154,1) 25%, rgba(254,225,64,1) 75%);
 }
 
 .example-container {

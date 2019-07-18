@@ -1,6 +1,7 @@
 /* sidenav drag elements */
 :host .toolbar {
   height: 100px;
+  text-align: center;
 }
 
 button {
@@ -16,6 +17,10 @@ button {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   cursor: grab;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .draggable:active {
