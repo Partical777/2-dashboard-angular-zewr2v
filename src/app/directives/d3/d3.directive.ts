@@ -570,7 +570,7 @@ export class D3Directive {
         .attr('preserveAspectRatio', 'xMidYMid');
 
     svg.append('text')
-        .text("Fuck")
+        .text("35%")
         .attr('x',"10%")
         .attr('y', "75%");
   }
