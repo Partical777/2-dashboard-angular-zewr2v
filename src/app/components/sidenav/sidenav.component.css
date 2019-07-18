@@ -12,11 +12,13 @@ button {
   padding: 10px;
   height: 100px;
   width: 200px;
-  border: solid 2px #000;
+  border: solid 2px #fc766a;
   margin-top: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   cursor: grab;
+
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
 
   display:flex;
   align-items:center;

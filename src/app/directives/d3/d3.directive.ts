@@ -159,8 +159,8 @@ export class D3Directive {
     // Create SVG Element
     var svg             =   d3.select( this.el.nativeElement )
         .append("svg")
-        .attr("width", chart_width)
-        .attr("height", chart_height);
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
+        .attr('preserveAspectRatio', 'xMidYMid');
         
     //Groups
     var groups = svg.selectAll('g')
@@ -209,8 +209,9 @@ export class D3Directive {
         
     var svg = d3.select( this.el.nativeElement )
         .append('svg')
-        .attr("width", chart_width)
-        .attr("height", chart_width);
+        .style("margin", "10px")
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
+        .attr('preserveAspectRatio', 'xMidYMid');
         
     var arcs = svg.selectAll("g.arc")
         .data(pie(data))
@@ -306,8 +307,8 @@ export class D3Directive {
     // Create SVG
     var svg             =   d3.select( this.el.nativeElement )
         .append("svg")
-        .attr("width", chart_width)
-        .attr("height", chart_height);
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
+        .attr('preserveAspectRatio', 'xMidYMid');
 
     // Create Axes
     var x_axis          =   d3.axisBottom(x_scale)
@@ -399,8 +400,8 @@ export class D3Directive {
     // Create SVG
     var svg             =   d3.select( this.el.nativeElement )
         .append("svg")
-        .attr("width", chart_width)
-        .attr("height", chart_height);
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
+        .attr('preserveAspectRatio', 'xMidYMid');
 
     // Create Axes
     var x_axis          =   d3.axisBottom(x_scale)
@@ -454,8 +455,8 @@ export class D3Directive {
 
     var svg = d3.select( this.el.nativeElement )
         .append('svg')
-        .attr('width', chart_width)
-        .attr('height', chart_height);
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
+        .attr('preserveAspectRatio', 'xMidYMid');
 
     //Create Scale
 
@@ -562,11 +563,16 @@ export class D3Directive {
     //Create Svg
 
     var svg = d3.select( this.el.nativeElement )
-        .append('h1')
+        .append('svg')
+        // .text("Fuck")
+        .style("font-size", "750%")
+        .attr('viewBox', '0 0 ' + chart_width + ' ' + chart_height)
+        .attr('preserveAspectRatio', 'xMidYMid');
+
+    svg.append('text')
         .text("Fuck")
-        .style("font-size", "10em")
-        .attr('width', chart_width)
-        .attr('height', chart_height);
+        .attr('x',"10%")
+        .attr('y', "75%");
   }
 
 }
