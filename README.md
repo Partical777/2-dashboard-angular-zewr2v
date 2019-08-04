@@ -1,6 +1,6 @@
 # 2-dashboard-angular-zewr2v
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/2-dashboard-angular-zewr2v)
+[Live Demo ⚡️](https://2-dashboard-angular-zewr2v.stackblitz.io)
 
 ![alt text](https://ph-files.imgix.net/7c7354fd-75ae-4c57-8218-2870c4b88536?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=675.5555555555555&h=380&fit=max)
 
